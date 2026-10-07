@@ -20,7 +20,6 @@
 #include <dt-bindings/media/video-interfaces.h>
 #include <dt-bindings/pinctrl/qcom,pmic-gpio.h>
 #include <dt-bindings/regulator/qcom,rpmh-regulator.h>
-#include <dt-bindings/sound/qcom,q6asm.h>
 #include <dt-bindings/usb/pd.h>
 #include "sm7225.dtsi"
 #include "pm6150l.dtsi"
@@ -1399,12 +1398,6 @@
 		qcom,hw-settle-time = <200>;
 		qcom,pre-scaling = <1 1>;
 		label = "xo_therm";
-	};
-};
-
-&q6asmdai {
-	dai@0 {
-		reg = <MSM_FRONTEND_DAI_MULTIMEDIA1>;
 	};
 };
 
